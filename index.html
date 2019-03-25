@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Country finder | find any country of your choice</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="country-finder-app">
+    <div class="title-input-result-text">
+      <div class="title">
+        <h1>Find your favourite country on planet Earth</h1>
+      </div>
+      <div id="inputs">
+        <input id="input" type="text" placeholder="Search country" autofocus />
+        <div class="actions">
+          <button class="button" id="starts">
+            Starts with...
+          </button>
+          <button class="button" id="contains">...contains...</button>
+          <button class="button" id="sort">
+            <i class="fas fa-sort-alpha-down"></i>
+          </button>
+        </div>
+      </div>
+      <div id="result-text">
+        <h3>
+          There are <span class="total-countries"></span> countrie(s) on this
+          list.
+        </h3>
+      </div>
+    </div>
+    <div class="countries-container"></div>
+  </div>
+  <script src="countries.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
